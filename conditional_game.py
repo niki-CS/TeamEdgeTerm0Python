@@ -27,29 +27,18 @@ import random
 	# Print instructions on the screen and 
 	# prompt the user to ask a question
 
-	
-
   # --------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("How a Magic 8 Ball works:\n") 
+print("The user asks a question and vigoriously shakes the ball then the ball will respond with one of twenty responses.\n")
+print("Pretty simple right?\n")
+question = input("What is your question?: ")
 
 # -------------------------------------------- 
 
 	# Part 2: Next, we need to randomly select a response from 20 options.
 
-	# Randomly select a number from 0 - 19 
+	# Randomly select a number from 0 - 19
 	# Use that to select from the following responses:
 		# 0 - It is certain.
 		# 1 - It is decidedly so.
@@ -76,24 +65,48 @@ import random
 
   # -------------------------------------------- 
 
+answer = random.randint(0, 20)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if answer == 0:
+	print("It is certain.")
+if answer == 1:
+	print("It is decidedly so.")
+if answer == 2:
+	print("Without a doubt.")
+if answer == 3:
+	print("Yes - definitely.")
+if answer == 4:
+	print("You may rely on it.")
+if answer == 5:
+	print("As I see it, yes.")
+if answer == 6:
+	print("Most likely.")
+if answer == 7:
+	print("Outlook good.")
+if answer == 8:
+	print("Yes.")
+if answer == 9:
+	print("Signs point to yes.")
+if answer == 10:
+	print("Reply hazy, try again.")
+if answer == 11:
+	print("Ask again later.")
+if answer == 12:
+	print("Better not tell you now.")
+if answer == 13:
+	print("Cannot predict now.")
+if answer == 14:
+	print("Concentrate and ask again.")
+if answer == 15:
+	print("Don't count on it.")
+if answer == 16:
+	print("My reply is no.")
+if answer == 17:
+	print("My sources say no.")
+if answer == 18:
+	print("Outlook not so good.")
+if answer == 19:
+	print("Very doubtful.")
 
 # -------------------------------------------- 
 
@@ -105,13 +118,31 @@ import random
 
 
 
-
-
-
-
-
-
-
+horoscope = input("What is your horoscope? ")
+if horoscope == "Capricorn":
+	print("You are tenacious, pragmatic, a stickler for rules, and ferocious ")
+if horoscope == "Aquarius":
+	print("You are assertive, creative, impulsive, and a loner")
+if horoscope == "Pisces":
+	print("You are adventurous, compassionate, anxious, and needy")
+if horoscope == "Aries":
+	print("You are confident, fiery, impatient, and honest.")
+if horoscope == "Taurus":
+	print("You are loyal, persistent, lazy, and bullheaded.")
+if horoscope == "Gemini":
+	print("You are intelligent ,sociable, superficial, and indecisive.")
+if horoscope == "Cancer":
+	print("You are charitable, loyal, blunt, and crabby.")
+if horoscope == "Leo":
+	print("You are proud, brave, arrogant, and competitive.")
+if horoscope == "Virgo":
+	print("You are diligent, organized, critical, and perfectionists.")
+if horoscope == "Libra":
+	print("You are clever, extroverted, social and vain.")
+if horoscope == "Scorpio":
+	print("You are magnetic, envious, and a thrill-seeker.")
+if horoscope == "Sagittarius":
+	print("You are indpendent, adventurous, blunt, and impatient.")
 
 
 

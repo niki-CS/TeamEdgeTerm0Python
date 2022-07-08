@@ -34,6 +34,7 @@ print(f"A fun fact about me is that {funFact}.")
 
 # **** Upchallenge! ****
 # Can you also print out the data type of the variables? 
+
 print(type(name))
 print(type(grade))
 print(type(funFact))
@@ -44,15 +45,11 @@ print(type(funFact))
 
 print("Happy Birthday to you.\nHappy Birthday to you.\nHappy Birthday dear Nicole.\nHappy Birthday to you.")
 
-
-
-
-
 # **** Challenge 1: Problem 3 ****
 # Print out a string that has brackets in it.
+
 birthday = 'April 20th'
 print(f'My birthday is on {birthday}')
-
 
 # -------------------------------------------- 
 # Challenge 2: 
@@ -101,7 +98,6 @@ print(576%4)
 # Given a variable that stores a number, print the values that come right before and right after.
 # For example, given the number 4, the program should print 3 and 5. 
 # Your code should work even if the value of the variable is changed.
-
 num = 3
 print({num - 1})
 print({num + 1})

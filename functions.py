@@ -19,31 +19,57 @@ print("\n------------------- Challenge 1 -------------------\n")
 
 # **** Challenge 1: Problem 1 ****
 # Write a function called print_message() that prints any message you want.
+def print_message():
+	print("Hello")
 
+print_message()
 
 # **** Challenge 1: Problem 2 ****
 # Write a function called print_five_messages() that calls print_message() five times.
+def print_five_messages():
+	print_message()
+	print_message()
+	print_message()
+	print_message()
+	print_message()
 
+print_five_messages()
 
 # **** Challenge 1: Problem 3 ****
 # Write a function called get_user_input() that asks the user if they'd like to print your message
 # once or five times. Then call one of the two functions above based on what the user decides.
+def get_user_input():
+	question = input("Would you like to see your message once or five times? ")
+	if question == "once":
+		print_message()
+	if question == "five times":
+		print_five_messages()
 
+get_user_input() 
 
 # **** Challenge 1: Problem 4 ****
 # Write a function called print_greeting() that prints a greeting message to the user.
+def print_greeting():
+	print("Hello!")
 
+print_greeting()
 
 # **** Challenge 1: Problem 5 ****
 # Write a function called print_closing() that prints a goodbye message to the user.
+def print_closing():
+	print("Ok bye! Hope you have a good day.")
 
+print_closing()
 
 # **** Challenge 1: Problem 6 ****
 # Write a function called run() that greets the user, asks them for input, and sends a goodbye message.
 # Remember! Use the functions that you've already made. Don't hardcode anything!
+def run():
+	print_greeting()
+	get_user_input() 
+	print_closing()
 
-
-
+run()
 # -------------------------------------------- 
 
 # Challenge 2: Functions are also able to take input and return output. 
@@ -65,11 +91,13 @@ print("\n------------------- Challenge 2 -------------------\n")
 
 # -------------------------------------------- 
 
+def sum_double(a,b):
+	if a != b:
+		print(a+b)
+	if a==b:
+		print((a+b)*2)
 
-
-
-
-
+sum_double(2, 2)
 
 # Make sure to test your code! Write a few function calls to make sure your code works!
 
@@ -86,10 +114,17 @@ print("\n------------------- Challenge 2 -------------------\n")
 
 # -------------------------------------------- 
 
+def makes_10(a, b):
+	if a+b == 10:
+		print("True")
+	elif a == 10:
+		print("True")
+	elif b == 10:
+		print("True")
+	else:
+		print("False")
 
-
-
-
+makes_10(1,8)
 
 # Make sure to test your code! Write a few function calls to make sure your code works!
 
@@ -114,9 +149,6 @@ print("\n------------------- Challenge 2 -------------------\n")
 
 
 
-
-
-
 # Make sure to test your code! Write a few function calls to make sure your code works!
 
 # -------------------------------------------- 
@@ -136,11 +168,13 @@ print("\n------------------- Challenge 2 -------------------\n")
 
 # -------------------------------------------- 
 
-
-
-
-
-
-
+def speedTick(a):
+	if a <= 60:
+		print("no ticket")
+	if a >= 81:
+		print("big ticket")
+	if a >= 61 and a <= 80:
+		print("small ticket")
+speedTick(62)
 
 # Make sure to test your code! Write a few function calls to make sure your code works!
