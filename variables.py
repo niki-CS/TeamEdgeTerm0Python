@@ -66,7 +66,7 @@ num2 = 10
 # **** Challenge 2: Problem 1 ****
 # Store the sum of num1 and num2 in a variable.
 # Print the sum.
-print(5 + 10)
+print(num3)
 
 # **** Challenge 2: Problem 2 ****
 # Store the difference between sum (above) and 7 in a variable.
