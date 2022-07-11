@@ -6,7 +6,7 @@ print("Let's play Rock Paper Scissors!")
 # Find the bugs below:
 
 while True:
-    userInput = input("Do you want to play rock, paper, or scissors?\n").lower()
+    userInput = input("Do you want to play rock, paper, or scissors?\n".lower())
     computerSelection = random.choice(["rock", "paper", "scissors"])
 
     print(f"You played: {userInput} and the computer played: {computerSelection}")
