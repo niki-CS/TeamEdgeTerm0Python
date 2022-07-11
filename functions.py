@@ -145,9 +145,41 @@ makes_10(1,8)
 		# alarm_clock(0, False) → "10:00"
 
 # -------------------------------------------- 
-
-
-
+def alarm_clock(a,b):
+	if a == 0 and b == True:
+		print("Off")
+	if a == 7 and b == True:
+		print("Off")
+	if a == 1 and b == True:
+		print("10:00")
+	if a == 2 and b == True:
+		print("10:00")
+	if a == 3 and b == True:
+		print("10:00")
+	if a == 4 and b == True:
+		print("10:00")
+	if a == 5 and b == True:
+		print("10:00")
+	if a == 6 and b == True:
+		print("10:00")
+	if a == 0 and b == False:
+		print("10:00")
+	if a == 7 and b == False:
+		print("10:00")
+	if a == 1 and b == False:
+		print("7:00")
+	if a == 2 and b == False:
+		print("7:00")
+	if a == 3 and b == False:
+		print("7:00")
+	if a == 4 and b == False:
+		print("7:00")
+	if a == 5 and b == False:
+		print("7:00")
+	if a == 6 and b == False:
+		print("7:00")
+	
+alarm_clock(3, True)
 
 # Make sure to test your code! Write a few function calls to make sure your code works!
 
