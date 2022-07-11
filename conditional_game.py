@@ -121,27 +121,27 @@ elif answer == 19:
 horoscope = input("What is your horoscope? ")
 if horoscope == "Capricorn":
 	print("You are tenacious, pragmatic, a stickler for rules, and ferocious ")
-if horoscope == "Aquarius":
+elif horoscope == "Aquarius":
 	print("You are assertive, creative, impulsive, and a loner")
-if horoscope == "Pisces":
+elif horoscope == "Pisces":
 	print("You are adventurous, compassionate, anxious, and needy")
-if horoscope == "Aries":
+elif horoscope == "Aries":
 	print("You are confident, fiery, impatient, and honest.")
-if horoscope == "Taurus":
+elif horoscope == "Taurus":
 	print("You are loyal, persistent, lazy, and bullheaded.")
-if horoscope == "Gemini":
+elif horoscope == "Gemini":
 	print("You are intelligent ,sociable, superficial, and indecisive.")
-if horoscope == "Cancer":
+elif horoscope == "Cancer":
 	print("You are charitable, loyal, blunt, and crabby.")
-if horoscope == "Leo":
+elif horoscope == "Leo":
 	print("You are proud, brave, arrogant, and competitive.")
-if horoscope == "Virgo":
+elif horoscope == "Virgo":
 	print("You are diligent, organized, critical, and perfectionists.")
-if horoscope == "Libra":
+elif horoscope == "Libra":
 	print("You are clever, extroverted, social and vain.")
-if horoscope == "Scorpio":
+elif horoscope == "Scorpio":
 	print("You are magnetic, envious, and a thrill-seeker.")
-if horoscope == "Sagittarius":
+elif horoscope == "Sagittarius":
 	print("You are indpendent, adventurous, blunt, and impatient.")
 
 
