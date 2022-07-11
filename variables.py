@@ -22,7 +22,7 @@ print("\n------------------- Challenge 1 -------------------\n")
 # Initialize the variables used in the {} with your data for the three statements above! 
 # Hint: Also think about where you would initialize those variables
 
-name = 'Nicole'
+name = "Nicole"
 
 grade = 12
 
