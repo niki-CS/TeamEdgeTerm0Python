@@ -69,43 +69,43 @@ answer = random.randint(0, 20)
 
 if answer == 0:
 	print("It is certain.")
-if answer == 1:
+elif answer == 1:
 	print("It is decidedly so.")
-if answer == 2:
+elif answer == 2:
 	print("Without a doubt.")
-if answer == 3:
+elif answer == 3:
 	print("Yes - definitely.")
-if answer == 4:
+elif answer == 4:
 	print("You may rely on it.")
-if answer == 5:
+elif answer == 5:
 	print("As I see it, yes.")
-if answer == 6:
+elif answer == 6:
 	print("Most likely.")
-if answer == 7:
+elif answer == 7:
 	print("Outlook good.")
-if answer == 8:
+elif answer == 8:
 	print("Yes.")
-if answer == 9:
+elif answer == 9:
 	print("Signs point to yes.")
-if answer == 10:
+elif answer == 10:
 	print("Reply hazy, try again.")
-if answer == 11:
+elif answer == 11:
 	print("Ask again later.")
-if answer == 12:
+elif answer == 12:
 	print("Better not tell you now.")
-if answer == 13:
+elif answer == 13:
 	print("Cannot predict now.")
-if answer == 14:
+elif answer == 14:
 	print("Concentrate and ask again.")
-if answer == 15:
+elif answer == 15:
 	print("Don't count on it.")
-if answer == 16:
+elif answer == 16:
 	print("My reply is no.")
-if answer == 17:
+elif answer == 17:
 	print("My sources say no.")
-if answer == 18:
+elif answer == 18:
 	print("Outlook not so good.")
-if answer == 19:
+elif answer == 19:
 	print("Very doubtful.")
 
 # -------------------------------------------- 
