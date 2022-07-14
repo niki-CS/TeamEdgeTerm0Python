@@ -133,8 +133,8 @@ def foodBot():
 
 	subtotal = drink + meal + dessert
 	tax = subtotal+tax_rate
-	tax = round(tax,2)
-	subtotal = round(subtotal,2)
+	tax = round(tax, 2)
+	subtotal = round(subtotal, 2)
 	print(f"\nYou total with tax is: {tax}")
 
 	tipInput = input("What would you like to tip? (10%, 15%, 20%, 22%):")

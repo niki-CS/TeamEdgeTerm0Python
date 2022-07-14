@@ -28,25 +28,32 @@ names = ["Julian", "Wolf", "Alex", "Steph", "Alessandro"]
 print("names: " + str(names))  
 
 #-->TODO: Declare another list called friends with at least 5 strings inside (if you don't have 5 friends make them up!)
-
+friends = ["Samora", "Saniya", "Alyssa", "Lea", "Ayesha"]
+print("friends: " + str(friends))
 
 #this list holds numbers
 numbers = [12.9, 23.4 , 100, 3.1415 , 500, 1.20]
 print("numbers: " + str(numbers)) 
 
 #-->TODO: Declare another list and add in at least 5 numbers. Why five? I don't know. It just feels right.
-
-
+numberstwo = [25, 6, 3, 0.75, 0.23]
+print("numbers: " + str(numberstwo))
+ 
 
 #this list has mixed data types. It's allowed in Python!
 random_stuff = ["Aardvark", True, False, 1.23, "Grandpa"]
 print("random: " + str(random_stuff))
 
 #-->TODO: Declare and log a list filled with the first 5 things that come into your head, booleans, Strings, numbers are all cool,
+random = ["BTS", False, 8, 22, "Potato"]
+print("random: " + str(random))
 
 
 #-->TODO: Declare and log two more lists with whatever you want. 
-
+favorite_songs = ["Late Night Talking", "Fearless", "Smile", "Titi Me Pregunto", "Piece of Peace"]
+print("songs: " + str(favorite_songs))
+years = [2005, 2006, 2007, 2008, 2009]
+print("years: " + str(years))
 
 print("------------------- CHALLENGE 2 -------------------")
  
@@ -54,10 +61,11 @@ print("------------------- CHALLENGE 2 -------------------")
 print("The first name is " + names[0])
 
 #-->TODO: Print the name of your best friend from your friends list
-
+print("The first name is " + friends[4])
 
 #-->TODO: Print the first AND last elements of any list you made, or make a brand new one.
-
+print("The first song is " + favorite_songs[1])
+print("The last song is " + favorite_songs[4])
 
 print("------------------- CHALLENGE 3 -------------------")
 #this code changes the value of the second element of the names list, then we print the list:
@@ -65,7 +73,8 @@ names[1] = "Alyssa"
 print(names)
 
 #-->TODO: Replace your friends! Modify the list to replace any or all of your friends with new ones.
-
+favorite_songs[3] = "Blue Flame"
+print(favorite_songs)
 
 #The code below uses the times_ten() function to multiply the first element in our list by 10:
 def times_ten(number):
@@ -76,10 +85,18 @@ numbers[0] = times_ten(numbers[0])
 print(numbers)
 
 #-->TODO: Write another function that multiplies a number by 1000 and print the list, as above 
+def times_thous(number):
+    number = number * 1000
+    return number
 
-
+numbers[2] = times_thous(numbers[2])
+print(numbers)
 
 #-->TODO: Replace your random list elements with anything you want, using the index. 
+random_replace = random.remove("BTS")
+random.append("Ocean")
+
+
 
 print("------------------- CHALLENGE 4 -------------------")
 
@@ -90,6 +107,8 @@ parent_list = [child_list_1, child_list_2]
 print("This list has babies: " + str(parent_list))
 
 #-->TODO: Store and print all the lists we have worked on thus far in a new parent list
+parent_list_two = [friends, numberstwo, random, years, favorite_songs]
+print("This list has babies: " + str(parent_list_two))
 
 
 print("------------------- CHALLENGE 5 -------------------")
@@ -102,9 +121,11 @@ movies.append("Black Panther")
 print("Movies now has: " + str(movies))
 
 #-->TODO: Declare a list with 5 favorite songs
-
+songs2 = ["Save Your Tears", "Dynamite", "More", "Butter", "Permission to Dance"]
+print("Songs  has: " + str(songs2))
 #-->TODO: Add 2-3 more songs using .append() and print both before and after.
-
+songs2.append("Black Swan")
+songs2.append("DNA")
 #We can also remove elements using .pop(), which removes the last element or the element at the given index. You can store it after it comes out:
 cities = ["New York", "Oakland", "Las Vegas", "Topeka"]
 print("cities: " + str(cities))
@@ -112,7 +133,7 @@ unwanted_city = cities.pop()
 print("unwanted city: " + str(unwanted_city))
 
 #-->TODO: remove your last song using .pop() and print the removed element as above
-
+unwanted_song = songs2.pop()
 #Note: there are more methods to remove and modify list elements. We will cover those later
 
 print("------------------- CHALLENGE 6 -------------------")
@@ -121,10 +142,11 @@ print("------------------- CHALLENGE 6 -------------------")
 print(f"I have {len(names)} friends")
 
 how_many_cities = len(cities)
-print(f"There are {how_many_cities} ciites in my list")
+print(f"There are {how_many_cities} cites in my list")
 
 #-->TODO: Print out the number of friends, or other items from other lists using string literals as above
-
+how_many_friends = len(friends)
+print(f"I have {len(friends)} friends")
 
 #The len() function is key, especially in conditionals or to simply count how many times to do something.
 
@@ -134,7 +156,10 @@ else:
     print("I need more numbers in my list!!!")
 
 #-->TODO: Write another if/else statement to check the size of your songs list. If you have 5 of less, add two more songs!
-
+if len(songs2) > 5:
+    print("There are more than 5 songs on my list.")
+else:
+    print("I need to add more songs to my list.")
 
 print("------------------- CHALLENGE 6 -------------------")
 
@@ -151,12 +176,21 @@ print("letter by letter: " + str(word_split_list))
 
 #-->TODO: Change the name of the person who is late in this sentence and print it.
 split_me = "I heard Alex was late to class today."
+split_late = split_me.split(" ")
+split_late.pop(2)
+split_late.insert(2, "Aly")
+print(split_late)
 
 #-->TODO: Add an exclamation mark to this sentence using split() and append(), then print. (yes, there are other ways, but...)
 make_me_exciting = "What a wonderful day"
+exclaim = make_me_exciting.split(" ")
+exclaim.append("!")
+print(exclaim)
 
 #We can also join our list elements into a string using.....join()!
 rejoined = " ".join(boring_list)  #joins it using spaces
 print('back in one piece: ' + rejoined)
 
 #-->TODO:  Finally, put the split_me sentence today and the make_me_exciting strings back together and print. You should see a string
+rejoined_two = " ".join(split_late) and " ".join(exclaim)
+print("back in one piece: " + rejoined_two)
