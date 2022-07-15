@@ -28,15 +28,15 @@ print("My Simple Calculator")
 # -------------------------------------------- 
 
 # Write a function called add_numbers that will take two numbers and return the sum.
-
-
+def add_numbers(a,b):
+	
 
 
 
 
 
 # Write a function called sub_numbers that will take two numbers and return the difference.
-
+def sub_numbers(a,b):
 
 
 
