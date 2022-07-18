@@ -109,7 +109,8 @@ words = input("Enter a random sentence: ")
 for word in words:
     for c in word:
         print(" - " + c)
-for words in word:
-    print("The shortest word is: " + min(words))
 #-->CHALLENGE: Let the user know which word is the shortest one!
-
+for x in words:
+    short = words.split
+    length = len(short())
+    print str(min(length))
