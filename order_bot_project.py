@@ -23,7 +23,7 @@
 	# Don't forget the tax and tip!
 
 # After this program finishes running, it should output a receipt with:
-        #1. the items you ordered and their cost 
+    #1. the items you ordered and their cost 
 	#2. a total for your order before tax
 	#3. a total for your order after tax
 	#4. the amount of your tip 
@@ -41,7 +41,7 @@
 # Remember: Your user should be able to order at least 3 items (a drink, meal, and dessert item). 
 
 # --------------------------------------------
-
+tax_rate = 0.08875
 
 
 # -------------------------------------------- 
@@ -54,10 +54,11 @@
 
 # --------------------------------------------
 
-
-
-
-
+print("      MENU \n   _ _ _ _ _ \n")
+print("Drinks:\n1. Milkshake    $3.00\n2.Coke    $2.00\n3. Sprite    $2.50")
+print("\nMeals:\n1. Hamburger w/ Fries    $7.00\n2. Chicken & Waffles    $6.00\n3. Caesars Salad    $5.50")
+print("\nDesserts:\n1. Vanilla Cake    $4.00\n2. Flan    $4.00\n3. Chocolate Sundae    $5.00")
+print("\nHello and welcome to Niki's Diner!")
 
 # -------------------------------------------- 
 
@@ -72,16 +73,10 @@
 
 # --------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
+global orderDrink 
+global orderMeal
+global orderDessert
+global subtotal
 
 # -------------------------------------------- 
 
@@ -89,7 +84,7 @@
 # Now that you have the costs of everything ordered, let's calculate the cost of the order(including tip and tax).
 
 # Write a function that will calculate the cost of the order, including:
-# - Cost of all  ordered items
+# - Cost of all ordered items
 # - Tax (Look up the sales tax of your city)
 # - Tip (Give the user the option to enter how much they want to tip)
 
@@ -97,16 +92,96 @@
 
 # -------------------------------------------- 
 
+def foodBot():
 
+	orderDrink = int(input("What would you like to drink? (Choose 1, 2, or 3. Choose 4 if you do not want a drink.):"))
+	orderMeal = int(input("\nNow, what would you like to eat? (Choose 1, 2, or 3. Choose 4 if you do not want a meal.):"))
+	orderDessert = int(input("\nLastly, what would you like to drink? (Choose 1, 2, or 3. Choose 4 if you do not want a dessert.):"))
 
+	if orderDrink == 1:
+		drink = 3.00 
+	elif orderDrink == 2:
+		drink = 2.00 
+	elif orderDrink == 3:
+		drink = 2.50 
+	elif orderDrink == 4:
+		drink = 0
+	else:
+		print("You have not selected a valid value. Please try again!")
 
+	if orderMeal == 1:
+		meal = 7.00 
+	elif orderMeal == 2:
+		meal = 6.00 
+	elif orderMeal == 3:
+		meal = 5.50 
+	elif orderMeal == 4:
+		meal = 0
+	else:
+		print("You have not selected a valid value. Please try again!")
 
+	if orderDessert == 1:
+		dessert = 4.00 
+	elif orderDessert == 2:
+		dessert = 4.00
+	elif orderDessert == 3:
+		dessert = 5.00 
+	elif orderDessert == 4:
+		dessert = 0
+	else:
+		print("You have not selected a valid value. Please try again!")
 
+	subtotal = drink + meal + dessert
+	tax = subtotal+tax_rate
+	tax = round(tax, 2)
+	subtotal = round(subtotal, 2)
+	print(f"\nYou total with tax is: {tax}")
 
+	tipInput = input("What would you like to tip? (10%, 15%, 20%, 22%):")
+	if tipInput == "10%": 
+		tip = subtotal*.10
+	elif tipInput == "15%": 
+		tip = subtotal*.15
+	elif tipInput == "20%": 
+		tip = subtotal*.20
+	elif tipInput == "22%":
+		tip = subtotal*.22
 
+	if orderDrink == 1:
+		selection1 = "Milkshake"
+	elif orderDrink == 2:
+		selection1 = "Coke" 
+	elif orderDrink == 3:
+		selection1 = "Sprite" 
+	elif orderDrink == 4:
+		selection1 = "No drink"
+	
+	if orderMeal == 1:
+		selection2 = "Hamburger w/ Fries" 
+	elif orderMeal == 2:
+		selection2 = "Chicken & Waffles" 
+	elif orderMeal == 3:
+		selection2 = "Caesars Salad" 
+	elif orderMeal == 4:
+		selection2 = "No meal"
+	
+	if orderDessert == 1:
+		selection3 = "Vanilla Cake"
+	elif orderDessert == 2:
+		selection3 = "Flan"
+	elif orderDessert == 3:
+		selection3 = "Chocolate Sundae" 
+	elif orderDessert == 4:
+		selection3 = "No dessert"
 
+	tip = round(tip, 2)
+	total = tax+tip	
+	print("\nThank you for dining at Niki's Diner! Here is your receipt:\n")
+	print(f"{selection1} - {drink}\n{selection2} - {meal}\n{selection3} - {dessert}\n")
+	print(f"Subtotal: {subtotal}\nTax: {tax_rate}\nTip: {tip}\nTotal: {total}\n")
+	print("Hope you come back soon!")
 
-
+foodBot()
 
 # -------------------------------------------- 
 
@@ -121,12 +196,7 @@
 # - Tip for the order
 # - Total cost for the order
 
-
 # -------------------------------------------- 
-
-
-
-
 # -------------------------------------------- 
 
 # Part 6: Food Order Bot
@@ -134,13 +204,6 @@
 # Call all of your functions to get your food order bot up and running!
 
 # --------------------------------------------
-
-
-
-
-
-
-
 # -------------------------------------------- 
 
 # Part 7: Upchallenges!

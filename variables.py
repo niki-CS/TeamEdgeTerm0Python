@@ -72,7 +72,7 @@ print(num3)
 # **** Challenge 2: Problem 2 ****
 # Store the difference between sum (above) and 7 in a variable.
 # Print the difference.
-difference = num3 -7
+difference = num3 - 7
 print(difference)
 
 # **** Challenge 2: Problem 3 ****
