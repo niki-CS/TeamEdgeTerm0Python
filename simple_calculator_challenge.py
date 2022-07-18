@@ -14,7 +14,6 @@
 print("My Simple Calculator")
 
 # -------------------------------------------- 
-
 # Part 1: 
 
 	# The first features of any simple calculator is that
@@ -28,18 +27,12 @@ print("My Simple Calculator")
 # -------------------------------------------- 
 
 # Write a function called add_numbers that will take two numbers and return the sum.
-
-
-
-
-
-
+def add_numbers(a,b):
+	print(a+b)
 
 # Write a function called sub_numbers that will take two numbers and return the difference.
-
-
-
-
+def sub_numbers(a,b):
+	print(a-b)
 
 # ------------
 # Testing Code - Uncomment the code below to test your code!
@@ -67,19 +60,13 @@ print("My Simple Calculator")
 # -------------------------------------------- 
 
 # Write a function called multiply_numbers that will take two numbers and return the product.
-
-
-
-
-
+def multiply_numbers(a,b):
+	print(a * b)
 
 # Write a function called divide_numbers that will take two numbers and return the quotient.
-
-
-
-
-
-
+def divide_numbers(a,b):
+	print(a/b)
+	
 # ------------
 # Testing Code - Uncomment the code below to test your code!
 
@@ -101,23 +88,17 @@ print("My Simple Calculator")
 # Write a function that will prompt the user for the operation they want to call and the values they are inputting.
 
 # -------------------------------------------- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+operator = input("What operation do you want to call? (+, -, *, /): ")
+a = int(input("What is your first number?: "))
+b = int(input("What is your second number?: "))
+if operator == "+":
+	add_numbers(a,b)
+if operator == "-":
+	sub_numbers(a,b)	
+if operator == "*":
+	multiply_numbers(a,b)
+if operator == "/":
+	divide_numbers(a,b)
 
 # -------------------------------------------- 
 
