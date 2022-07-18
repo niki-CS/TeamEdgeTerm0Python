@@ -120,27 +120,7 @@ if operator == "/":
 		# Use comments throughout your code
 		# Test your code!
   
-# -------------------------------------------- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# --------------------------------------------  
 
 # -------------------------------------------- 
 # Ignore this section. This is just for checking your work
