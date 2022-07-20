@@ -110,7 +110,7 @@ for word in words:
     for c in word:
         print(" - " + c)
 #-->CHALLENGE: Let the user know which word is the shortest one!
-for x in words:
-    short = words.split
-    length = len(short())
-    print str(min(length))
+#for x in words:
+#   short = words.split
+#    length = len(short())
+#    print(min(length))
