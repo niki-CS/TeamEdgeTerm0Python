@@ -66,6 +66,6 @@ get_main = {"characters": "Kaz"}.get("characters")
 #-->TODO: Call the method.
 print(book)
 
-print("------------------- CHALLENGE 4 : LITERALLY   -------------------") . 
+print("------------------- CHALLENGE 4 : LITERALLY   -------------------") 
 #-->TODO: Put it all together using a string literal to tell the story of your dictionary!
 print(f"My favorite book is called {book['name']}. It is in the {book['genre']} genre and it was released in {book['release']}. The main characters in this book are {book['characters']} with the book mainly centering on {get_main}. Some other books in this universe are {book['series']}.")

@@ -46,10 +46,7 @@ class Superperson:
 
 flash = Superperson("Flash", 32, "Speed", "Reverse Flash")
 reverse_flash = Superperson("Reverse Flash", 32, "Speed", "Flash")
-print(f"Your name is {flash.name} and you are {flash.age}. Your powers are {flash.powers} and your nemesis is {flash.nemesis}. You have {flash.health_points} health points.")
+print(f"Your name is {flash.name} and you are {flash.age} years old. My superpower is {flash.powers} and my nemesis is {flash.nemesis}. I have {flash.health_points} health points.")
 print(f"Villian: My name is {reverse_flash.name} and I am {reverse_flash.age}. My powers are {reverse_flash.powers} and you, {reverse_flash.nemesis}, are my nemesis. I have {reverse_flash.health_points} health points.")
 while active:
     flash.attack(reverse_flash)
-
-
-
