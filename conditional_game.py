@@ -116,33 +116,31 @@ elif answer == 19:
 	
 # -------------------------------------------- 
 
-
-
-horoscope = input("What is your horoscope? ")
-if horoscope == "Capricorn":
-	print("You are tenacious, pragmatic, a stickler for rules, and ferocious ")
-elif horoscope == "Aquarius":
-	print("You are assertive, creative, impulsive, and a loner")
-elif horoscope == "Pisces":
-	print("You are adventurous, compassionate, anxious, and needy")
-elif horoscope == "Aries":
-	print("You are confident, fiery, impatient, and honest.")
-elif horoscope == "Taurus":
-	print("You are loyal, persistent, lazy, and bullheaded.")
-elif horoscope == "Gemini":
-	print("You are intelligent ,sociable, superficial, and indecisive.")
-elif horoscope == "Cancer":
-	print("You are charitable, loyal, blunt, and crabby.")
-elif horoscope == "Leo":
-	print("You are proud, brave, arrogant, and competitive.")
-elif horoscope == "Virgo":
-	print("You are diligent, organized, critical, and perfectionists.")
-elif horoscope == "Libra":
-	print("You are clever, extroverted, social and vain.")
-elif horoscope == "Scorpio":
-	print("You are magnetic, envious, and a thrill-seeker.")
-elif horoscope == "Sagittarius":
-	print("You are indpendent, adventurous, blunt, and impatient.")
+# horoscope = input("What is your horoscope? ")
+# if horoscope == "Capricorn":
+# 	print("You are tenacious, pragmatic, a stickler for rules, and ferocious ")
+# elif horoscope == "Aquarius":
+# 	print("You are assertive, creative, impulsive, and a loner")
+# elif horoscope == "Pisces":
+# 	print("You are adventurous, compassionate, anxious, and needy")
+# elif horoscope == "Aries":
+# 	print("You are confident, fiery, impatient, and honest.")
+# elif horoscope == "Taurus":
+# 	print("You are loyal, persistent, lazy, and bullheaded.")
+# elif horoscope == "Gemini":
+# 	print("You are intelligent ,sociable, superficial, and indecisive.")
+# elif horoscope == "Cancer":
+# 	print("You are charitable, loyal, blunt, and crabby.")
+# elif horoscope == "Leo":
+# 	print("You are proud, brave, arrogant, and competitive.")
+# elif horoscope == "Virgo":
+# 	print("You are diligent, organized, critical, and perfectionists.")
+# elif horoscope == "Libra":
+# 	print("You are clever, extroverted, social and vain.")
+# elif horoscope == "Scorpio":
+# 	print("You are magnetic, envious, and a thrill-seeker.")
+# elif horoscope == "Sagittarius":
+# 	print("You are indpendent, adventurous, blunt, and impatient.")
 
 
 
