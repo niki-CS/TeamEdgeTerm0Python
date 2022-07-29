@@ -51,11 +51,11 @@ death_4 = Situation("MIKES HOUSE", "GAME OVER. You go to your long time friends 
 
 death_5 = Situation("WOODS", "GAME OVER. You stand no chance against this monster and you ultimately pissed him off which led to your early death..","", "", "")
 
-ending_3 = Situation("WOODS", "YOU WIN! Demagorgans hate fire which allows you to successfully and easily defeat the Demagorgan.. You quickly look around after you defeated your enemy and in the distance you see a tree with a hole that seems like there is a light on the other side. You quickly run, go through the hole, and.. you're home!!", "", "", "")
+ending_3 = Situation("WOODS", "YOU WIN!Demagorgans hate fire which allows you to successfully and easily defeat the Demagorgan.. You quickly look around after you defeated your enemy and in the distance you see a tree with a hole that seems like there is a light on the other side. You quickly run, go through the hole, and.. you're home!!", "", "", "")
 
 ending_4 = Situation("WOODS", "YOU WIN! You hit the Demagorgan critically in the heart with your gun immediately killing them.. You quickly look around after you defeated your enemy and in the distance you see a tree with a hole that seems like there is a light on the other side. You quickly run, go through the hole, and.. you're home!!", "", "", "")
 
-fight = Situation("WOODS", "While running around looking for something useful you hear footsteps that do not sound human...You're being chased!! You hide behind a large tree but your heavy breathing gives away your location and the Demagorgan soon finds you... BUT you're not dead yet! You're being dragged to what you can assume is it's lair..", "Now is yoru time to use your weapon! But, keep in mind that this is a risky fight that could lead to your death...(use flamethrower OR use gun): ", {"use flamethrower": [death_5, ending_3]}, {"use gun": [death_5, ending_4]})
+fight = Situation("WOODS", "While running around looking for something useful you hear footsteps that do not sound human...You're being chased!! You hide behind a large tree but your heavy breathing gives away your location and the Demagorgan soon finds you... BUT you're not dead yet! You're being dragged to what you can assume is it's lair..", "Now is your time to use your weapon! But, keep in mind that this is a risky fight that could lead to your death...(use flamethrower OR use gun): ", {"use flamethrower": [death_5, ending_3]}, {"use gun": [death_5, ending_4]})
 
 now_outside = Situation("OUTSIDE","There was nothing else that was useful so you head outside but you hear a loud sound coming from seemingly behind you.","QUICK YOU NEED TO RUN! Where do you want to go? (mikes house OR woods): ", {"mikes house": [death_4]}, {"woods": [fight]})
 
@@ -65,13 +65,13 @@ police_station = Situation("POLICE STATION", "You enter the police and it is emp
 
 look_around = Situation("OUTSIDE", "It is stormy outside and you miss the fake safety of your 'home'. You look around and remember that Mike's house is to the left while the police station is to the right", "Where do you want to go? (mikes house OR police station): ", {"mikes house": [death_4]}, {"police station": [police_station]})
 
-closet = Situation("CLOSET", "You successfully hide from the Demagorgan..", "Do you want to stay inside the closet for a while or go outside now? (go outside OR stay inside): ", {"go outside": [look_around]}, {"stay inside": [stay_still2]})
+closet = Situation("CLOSET", "You successfully hid from the Demagorgan..", "Do you want to stay inside the closet for a while or go outside now? (go outside OR stay inside): ", {"go outside": [look_around]}, {"stay inside": [stay_still2]})
 
 death_7 = Situation("TABLE", "You were in the direct eyesight from the Demagorgan and once he saw you he killed you.. GAME OVER.", "", "", "")
 
 house_2 = Situation("HOME", "You alerted the demagorgan!! You reach your home but you must quickly hide..","Do you want to hide under the coffee table or the closet? (table OR closet): ", {"table": [death_7]}, {"closet": [closet]})
 
-call = Situation("HOME", "The phone starts to crackle and you can barely hear each other.. INCREASED URGENCY. Your mom starts to worry on the other side since she knows you are on the phone but she can;t hear you well.'STAY SAFE AND HIDE WE WILL TRY OUR BEST TO GET YOU OUT' Will's mom says faintly. You start to get anxious of your hiding place since you have been here for what seems like an eternity..", "Do you want to hide somewhere else or stay? (hide OR stay): ", {"hide": [house_2]}, {"stay": [death_8]})
+call = Situation("HOME", "The phone starts to crackle and you can barely hear each other.. INCREASED URGENCY. Your mom starts to worry on the other side since she knows you are on the phone but she can't hear you well.'STAY SAFE AND HIDE WE WILL TRY OUR BEST TO GET YOU OUT' Will's mom says faintly. You start to get anxious of your hiding place since you have been here for what seems like an eternity..", "Do you want to hide somewhere else or stay? (hide OR stay): ", {"hide": [house_2]}, {"stay": [death_8]})
 
 write = Situation("HOME", "They can't see what you write.. it's the Upside Down!", "Do you want to call mom or quit game? (call OR quit): ", {"call": [call]}, "quit")
 
