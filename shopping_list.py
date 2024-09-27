@@ -40,11 +40,7 @@ def check_answer(ans):
 def add_item(item):
     global shopping_list
     shopping_list.append(item)
-    new_item_list = (",".join(item))
     print(str(item) + " added. The shopping list now has: " + str(shopping_list))
-    
-
-#this function can take in a string and store it in an array
     
 def remove_item(item):
     global shopping_list
